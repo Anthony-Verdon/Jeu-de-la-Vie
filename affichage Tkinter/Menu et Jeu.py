@@ -45,6 +45,9 @@ class Menu:
         
         self.frameImage.pack(expand="yes")#affiche et centre la frame image
         
+        label_title=tkinter.Label(self.menu,text="Jeu de la vie - Automate cellulaire",font=("Kokonor",30),bg="#EB9F1B",fg="black")
+        label_title.place(x=675,y=100)
+        
         self.InputTour=tkinter.Entry(self.frameInput,font=("Kokonor",20))#créer un input 
         self.InputTour.insert(0,"écrire le nombre de tour")#le placeholder de l'input
         self.InputTour.bind('<FocusIn>', self.removeTour)#si on clique dessus, lance la fonction removeTour
